@@ -1,0 +1,43 @@
+table {
+}
+.image {
+	width:320px;
+	height:200px;
+	overflow:hidden;
+	margin:5px;
+}
+
+.row {
+	border:1px solid black;
+	width: 100%;
+	margin:10px 0;
+}
+
+.title {
+	font-size:17px;
+	padding:10px 20px;
+	margin:0;
+	border-bottom:1px solid #e1e1e1;
+	background:#e1e1e1;
+}
+
+.row.ok {
+	color:green;
+}
+
+.row.error {
+	color:red;
+}
+
+.row.pending {
+	color:yellow;
+}
+
+.row.error .image img,
+.row.error .image canvas {
+	width: 100%;
+}
+
+.row.ok .image {
+	display:none;
+}

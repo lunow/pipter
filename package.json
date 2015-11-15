@@ -1,0 +1,23 @@
+{
+  "name": "pipter",
+  "version": "1.0.0",
+  "description": "Pixel Perfect Frontend Tester",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "async": "^1.5.0",
+    "cp": "^0.2.0",
+    "express": "^4.13.3",
+    "imagediff": "^1.0.8",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "phantom": "^0.8.0",
+    "webdriverjs-angular": "^0.1.3"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Pipter">
+<head>
+	<meta charset="UTF-8">
+	<title>Pipter Client</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div ng-controller="main">
+		<div>
+			<h1>Pipter</h1>
+			<span class="status pending">{{pending}} pending</span>
+			<span class="status failed">{{failed}} failed</span>
+			<span class="status success">{{success}} success</span>
+		</div>
+
+		<diff-view ng-repeat="image in references" image="image"></diff-view>
+	</div>
+	
+
+	<script src="jquery/dist/jquery.min.js"></script>
+	<script src="angular/angular.min.js"></script>
+	<script src="imagediff/imagediff.min.js"></script>
+	<script src="pipter.client.js"></script>
+</body>
+</html>

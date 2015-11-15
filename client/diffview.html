@@ -1,0 +1,19 @@
+<table class="row" ng-class="{'ok': equal === true, 'error': equal === false, 'pending': equal == undefined}">
+	<tr>
+		<td class="title" colspan="3">
+			{{name}}
+			<button ng-show="!pending" ng-click="refresh()">refresh</button>
+			<button ng-show="equal === false" ng-click="accept()">accept new version</button>
+		</td>
+	</tr>
+	<tr>
+		<td class="image reference">
+			<img ng-src="reference/{{image}}" width="{{ 1280 }}">
+		</td>
+		<td class="image current">
+			<img ng-src="current/{{image}}" width="{{ 1280 }}">
+		</td>
+		<td class="image diff">
+		</td>
+	</tr>
+</table>
